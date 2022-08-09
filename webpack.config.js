@@ -17,6 +17,14 @@ const rulesForJavaScript = {
   }
 }
 
+const rulesForCss = {
+  test: /\.css$/i,
+  use: [
+    'style-loader',
+    'css-loader'
+  ]
+}
+
 const rulesForImages = {
   test: /\.(png|jpe?g|gif|svg)$/i,
   exclude: '/node_modules/',
@@ -28,6 +36,7 @@ const rulesForImages = {
 
 const rules = [
   rulesForJavaScript,
+  rulesForCss,
   rulesForImages
 ]
 
